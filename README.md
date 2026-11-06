@@ -4,6 +4,13 @@
 
 # evox-mcp
 
+[![Version](https://img.shields.io/badge/version-1.0.0-emerald.svg)](https://github.com/leouofa/evox-mcp/releases/tag/v1.0.0)
+[![MCP Server](https://img.shields.io/badge/MCP-Server-purple.svg)](https://modelcontextprotocol.io)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.7-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org)
+[![Node.js](https://img.shields.io/badge/Node.js-18%2B-339933?logo=node.js&logoColor=white)](https://nodejs.org)
+[![Evox Engine](https://img.shields.io/badge/Evox-Ruby_Gem-CC342D?logo=ruby&logoColor=white)](https://github.com/leouofa/evox)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+
 Model Context Protocol (MCP) server for managing and compiling songbook PDFs using [Evox](https://github.com/leouofa/evox).
 
 `evox-mcp` exposes a structured, validated AST interface for AI agents to inspect, author, edit, and compile songbooks into high-quality PDFs with custom covers, multi-column lyrics, aligned chords, and an automatic Table of Contents.
