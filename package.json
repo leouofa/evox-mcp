@@ -1,0 +1,54 @@
+{
+  "name": "evox-mcp",
+  "version": "1.0.0",
+  "description": "Model Context Protocol (MCP) server for managing and generating PDF songbooks with Evox",
+  "main": "./dist/server.js",
+  "types": "./dist/server.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/server.d.ts",
+      "import": "./dist/server.js"
+    }
+  },
+  "bin": {
+    "evox-mcp": "dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "type": "module",
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "start": "node dist/index.js",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "prepublishOnly": "npm run build && npm run test"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "evox",
+    "songbook",
+    "chords",
+    "lyrics",
+    "prawn",
+    "pdf"
+  ],
+  "author": "Leonid Medovyy <leonid@macron1.io>",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.10.0",
+    "yaml": "^2.7.0",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.4",
+    "tsup": "^8.3.6",
+    "typescript": "^5.7.3",
+    "vitest": "^3.0.5"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
