@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/logo.jpg" alt="Evox MCP" width="600" />
+</p>
+
 # evox-mcp
 
 Model Context Protocol (MCP) server for managing and compiling songbook PDFs using [Evox](https://github.com/leouofa/evox).
