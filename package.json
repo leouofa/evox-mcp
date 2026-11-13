@@ -37,6 +37,14 @@
   ],
   "author": "Leonid Medovyy <leonid@macron1.io>",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leouofa/evox-mcp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/leouofa/evox-mcp/issues"
+  },
+  "homepage": "https://github.com/leouofa/evox-mcp#readme",
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.10.0",
     "yaml": "^2.7.0",

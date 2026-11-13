@@ -79,7 +79,29 @@ npm run build
 
 ## MCP Client Configuration Example
 
+### Direct Execution with `npx` (Recommended)
+
 In `claude_desktop_config.json` or Antigravity MCP settings:
+
+```json
+{
+  "mcpServers": {
+    "evox": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "evox-mcp"
+      ],
+      "env": {
+        "EVOX_PROJECT_DIR": "/path/to/your/songbook",
+        "EVOX_BIN": "evox"
+      }
+    }
+  }
+}
+```
+
+### Local / Development Setup
 
 ```json
 {
@@ -90,7 +112,7 @@ In `claude_desktop_config.json` or Antigravity MCP settings:
         "/Users/leonid/src/evox-mcp/dist/index.js"
       ],
       "env": {
-        "EVOX_PROJECT_DIR": "/Users/leonid/Documents/MySongbook",
+        "EVOX_PROJECT_DIR": "/path/to/your/songbook",
         "EVOX_BIN": "evox"
       }
     }
